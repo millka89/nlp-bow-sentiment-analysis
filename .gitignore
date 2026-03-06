@@ -1,0 +1,14 @@
+# Sekrety
+.env
+
+# Dane (za duże na GitHub)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
