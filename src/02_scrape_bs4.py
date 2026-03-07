@@ -1,3 +1,11 @@
+"""
+02_scrape_bs4.py
+----------------
+Scrapes Polish food reviews from degustujemy.pl using BeautifulSoup.
+Collects title, date, category and review text from 8 categories.
+Saves results to data/raw/degustujemy_scraped.csv.
+Note: demonstrates handling of non-ASCII (Polish) characters.
+"""
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd

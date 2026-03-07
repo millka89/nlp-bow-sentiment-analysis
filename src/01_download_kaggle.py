@@ -1,3 +1,9 @@
+"""
+01_download_kaggle.py
+---------------------
+Downloads the Amazon Fine Food Reviews dataset from Kaggle
+using the Kaggle API. Saves raw data to data/raw/Reviews.csv.
+"""
 import requests
 import zipfile
 import io
