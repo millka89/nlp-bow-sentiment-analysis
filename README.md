@@ -50,3 +50,16 @@ nlp-bow-sentiment-analysis/
 The second data source (`degustujemy.pl`) contains Polish-language food reviews.
 This is intentional — it demonstrates handling of non-ASCII characters
 and special characters in NLP pipelines.
+
+## Model Performance
+
+### Bag of Words + TF-IDF + Logistic Regression
+
+Binary sentiment classification (positive: 4-5★, negative: 1-2★). Neutral reviews (3★) excluded.
+
+| Version | Accuracy | Recall (negative) | Macro F1 |
+|---|---|---|---|
+| Default | 0.92 | 0.61 | 0.83 |
+| class_weight='balanced' | 0.89 | 0.87 | 0.83 |
+
+**Chosen: `class_weight='balanced'`** — better detection of negative reviews at the cost of slightly lower overall accuracy. Class imbalance present: ~84% positive vs ~16% negative reviews.
