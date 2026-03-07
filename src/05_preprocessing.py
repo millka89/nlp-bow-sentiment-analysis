@@ -25,6 +25,7 @@ df['label'] = df['Score'].apply(lambda x: 1 if x >= 4 else 0)
 # --- Clean text ---
 def clean_text(text):
     text = text.lower()
+    text = re.sub(r'<.*?>', '', text) 
     text = re.sub(r'[^a-z\s]', '', text)  # delete numbers and special characters
     return text
 
