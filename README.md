@@ -44,7 +44,7 @@ Binary sentiment classification (positive: 4-5★, negative: 1-2★). Neutral re
 5. All processed files will be generated in `data/processed/`
 
 ## 📁 Project structure
-"""
+'''
 nlp-bow-sentiment-analysis/
 │
 ├── .env ← Kaggle token (private, in .gitignore!)
@@ -77,7 +77,7 @@ nlp-bow-sentiment-analysis/
 │
 └── notebooks/
 └── 00_exploration.ipynb
-"""
+'''
 
 ## 📂 Data sources
 - `data/raw/Reviews.csv` — [Kaggle: Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)
